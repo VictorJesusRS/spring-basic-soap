@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.example.com/demo5/gen"
+           targetNamespace="http://www.example.com/demo5/gen" elementFormDefault="qualified">
+
+    <xs:element name="storeEmployeeRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="documentNumber" type="xs:string"/>
+                <xs:element name="name" type="xs:string"/>
+                <xs:element name="lastName" type="xs:string"/>
+                <xs:element name="documentType" type="xs:string"/>
+                <xs:element name="birthday" type="xs:date"/>
+                <xs:element name="linkingDate" type="xs:date"/>
+                <xs:element name="role" type="xs:string"/>
+                <xs:element name="salary" type="xs:decimal"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="storeEmployeeResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="success" type="xs:boolean"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="employee">
+        <xs:sequence>
+            <xs:element name="documentNumber" type="xs:string"/>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="lastName" type="xs:string"/>
+            <xs:element name="documentType" type="xs:string"/>
+            <xs:element name="birthday" type="xs:date"/>
+            <xs:element name="linkingDate" type="xs:date"/>
+            <xs:element name="role" type="xs:string"/>
+            <xs:element name="salary" type="xs:decimal"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
